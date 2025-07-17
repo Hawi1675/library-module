@@ -1,37 +1,19 @@
-
 import math
 
-def main():
-    print("Math Library Module Demonstration")
-    print("---------------------------------")
-    
-
+while True:
     try:
         num = float(input("Enter a positive number: "))
-        if num <= 0:
-            print("Please enter a positive number.")
-            return
-    except ValueError:
-        print("Invalid input. Please enter a number.")
-        return
-    
-    
-    print(f"\nSquare root of {num}: {math.sqrt(num)}")
-    print(f"Natural logarithm of {num}: {math.log(num)}")
-    print(f"Base-10 logarithm of {num}: {math.log10(num)}")
-    print(f"Exponential of {num}: {math.exp(num)}")
-    print(f"Sine of {num} radians: {math.sin(num)}")
-    print(f"Factorial of {int(num)} (if integer): ", end="")
-    if num.is_integer():
-        print(math.factorial(int(num)))
-    else:
-        print("Not an integer - cannot compute factorial")
-    
-    
-    print("\nMath Constants:")
-    print(f"Pi: {math.pi}")
-    print(f"Euler's number (e): {math.e}")
-    print(f"Tau (2π): {math.tau}")
+        if num > 0:
+            break
+        print("Please enter a positive number.")
+    except:
+        print("Invalid input. Try again.")
 
-if __name__ == "__main__":
-    main()
+print(f"\nSquare root: {math.sqrt(num):.2f}")
+print(f"Natural log: {math.log(num):.2f}")
+print(f"Sine: {math.sin(num):.2f}")
+
+print(f"\nPi: {math.pi:.5f}")
+print(f"Euler's number: {math.e:.5f}")
+    
+
