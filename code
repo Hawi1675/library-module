@@ -1,11 +1,11 @@
-# Import the math module
+
 import math
 
 def main():
     print("Math Library Module Demonstration")
     print("---------------------------------")
     
-    # Get a number from the user
+
     try:
         num = float(input("Enter a positive number: "))
         if num <= 0:
@@ -15,7 +15,7 @@ def main():
         print("Invalid input. Please enter a number.")
         return
     
-    # Demonstrate various math functions
+    
     print(f"\nSquare root of {num}: {math.sqrt(num)}")
     print(f"Natural logarithm of {num}: {math.log(num)}")
     print(f"Base-10 logarithm of {num}: {math.log10(num)}")
@@ -27,7 +27,7 @@ def main():
     else:
         print("Not an integer - cannot compute factorial")
     
-    # Constants from the math module
+    
     print("\nMath Constants:")
     print(f"Pi: {math.pi}")
     print(f"Euler's number (e): {math.e}")
